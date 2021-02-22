@@ -58,12 +58,16 @@ button.out {
 .section, .modal-selection, .modal-success {
   width: calc(100% - 3rem);
   max-width: 750px;
-  margin: auto;
-  margin-bottom: 1.5rem;
   padding: 1.5rem;
   background: #fff;
   border: 1px solid #d8d8d8;
   border-radius: 10px;
+}
+.section {
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
 }
 .stand {
   position: relative;
@@ -75,7 +79,7 @@ button.out {
   overflow: hidden;
 }
 
-.container, .modal-selection ,.modal-success {
+.modal-container, .modal-selection ,.modal-success {
   display: none;
 }
 
@@ -262,3 +266,25 @@ button.out {
 }
 
 /* MODALS */
+.modal-container.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 400;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .2);
+  overflow: scroll;
+}
+.modal-selection.active {
+  position: relative;
+  top: 121px;
+  margin: auto;
+  display: block;
+}
+.modal-success.active {
+  display: block;
+}
