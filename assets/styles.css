@@ -194,17 +194,15 @@ button.out {
   margin-left: 5px;
 }
 .product::before {
-  content: " ";
+  content: url('../images/logo-mastercraft.svg');
   position: absolute;
   top: -28px;
   left: 0;
   right: 0;
-  margin: auto;
-  display: block;
   width: 56px;
   height: 56px;
-  background-image: url(../images/logo-mastercraft.svg);
-  background-repeat: no-repeat;
+  margin: auto;
+  display: block;
 }
 /* DATA */
 .data {
