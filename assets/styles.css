@@ -299,3 +299,8 @@ p {
 .modal-success > .modal__info {
   text-align: center;
 }
+.modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
