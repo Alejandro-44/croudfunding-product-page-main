@@ -38,7 +38,7 @@ p {
   color: #fff;
   border: none;
   border-radius: 28px;
-  padding: 0 2.875rem;
+  padding: 0 2.8rem;
   font-size: 1rem;
   font-family: var(--font);
   font-weight: var(--weight-bold);
@@ -180,12 +180,24 @@ p {
   align-items: center;
 }
 .bookmark {
-  background-color: transparent;
-  padding: 0;
-  line-height: 0;
-  border-radius: 50%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  background-color: #f4f8f9;
+  font-size: 1rem;
+  font-family: var(--font);
+  font-weight: var(--weight-bold);
+  color: var(--neutral-second);
+  padding-right: 0;
+  padding-left: 0;
   border: none;
+  border-radius: 28px;
   margin-left: 5px;
+}
+.bookmark span {
+  display: none;
+  padding-right: 28px;
+  margin-left:10px;
 }
 .product::before {
   content: url('../images/logo-mastercraft.svg');
