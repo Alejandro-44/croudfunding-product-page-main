@@ -286,5 +286,10 @@ button.out {
   display: block;
 }
 .modal-success.active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-success > .modal__info {
+  text-align: center;
 }
