@@ -32,12 +32,12 @@ p {
   color: var(--neutral-second);
   line-height: 2;
 }
-button {
-  height: 48px;
+.button {
+  height: 56px;
   background-color: var(--first-color);
   color: #fff;
   border: none;
-  border-radius: 24px;
+  border-radius: 28px;
   padding: 0 2.875rem;
   font-size: 1rem;
   font-family: var(--font);
@@ -46,10 +46,10 @@ button {
   line-height: 100%;
   margin: 1rem 0;
 }
-button:hover {
+.button:hover {
   background-color: var(--second-color);
 }
-button.out {
+.button.out {
   background-color: var(--neutral-second);
 }
 .main {
@@ -64,10 +64,8 @@ button.out {
   border-radius: 10px;
 }
 .section {
-  margin-top: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1.5rem;
+  position: relative;
+  margin: 0 auto 1.5rem;
 }
 .stand {
   position: relative;
@@ -167,7 +165,6 @@ button.out {
 
 /* PRODUCT */
 .product {
-  position: relative;
   margin-top: -3.5rem;
 }
 .product__title {
@@ -180,10 +177,7 @@ button.out {
 .product__buttons {
   display: flex;
   justify-content: space-between;
-}
-.product__button {
-  height: 55px;
-  border-radius: 27.5px;
+  align-items: center;
 }
 .bookmark {
   background-color: transparent;
@@ -204,6 +198,7 @@ button.out {
   margin: auto;
   display: block;
 }
+
 /* DATA */
 .data {
   display: flex;
@@ -235,6 +230,7 @@ button.out {
   font-size: 1rem;
   font-weight: var(--weight-regular);
 }
+
 /* STANDS */
 .stand__title {
   font-size: 1rem;
