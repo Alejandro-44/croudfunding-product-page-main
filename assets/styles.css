@@ -67,14 +67,16 @@ p {
   position: relative;
   margin: 0 auto 1.5rem;
 }
-.stand {
+.stand, .modal-stand {
   position: relative;
   margin-bottom: 1.5rem;
-  padding: 1.5rem;
   background: #fff;
   border: 1px solid #d8d8d8;
   border-radius: 10px;
   overflow: hidden;
+}
+.stand {
+  padding: 1.5rem;
 }
 
 .modal-container, .modal-selection ,.modal-success {
@@ -285,12 +287,53 @@ p {
   background-color: rgba(0, 0, 0, .2);
   overflow: scroll;
 }
+/* Selection modal */
 .modal-selection.active {
   position: relative;
   top: 121px;
   margin: auto;
   display: block;
 }
+.modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.stand-container {
+  padding: 1.5rem;
+}
+.stand-container.selected {
+  border-bottom: 1px solid #d8d8d8;
+}
+.pledge-selected {
+  padding: 1.5rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.pledge.selected {
+  display: flex;
+}
+.pledge__text {
+  color: var(--neutral-second);
+}
+
+.pledge .button {
+  padding: 0 1.5rem;
+  font-size: .9rem;
+  margin-top: 1.5rem;
+}
+.pledge__input {
+  height: 56px;
+  width: 100px;
+  padding: 0 1.5rem;
+  border:1px solid #d8d8d8;
+  border-radius: 28px;
+  margin: 1.5rem 14px 0 0;
+  font-family: var(--font);
+  text-align: center;
+}
+/* Success modal */
 .modal-success.active {
   display: flex;
   flex-direction: column;
@@ -298,9 +341,4 @@ p {
 }
 .modal-success > .modal__info {
   text-align: center;
-}
-.modal__close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
 }
