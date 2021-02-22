@@ -305,7 +305,7 @@ p {
 .stand-container.selected {
   border-bottom: 1px solid #d8d8d8;
 }
-.pledge-selected {
+.pledge {
   padding: 1.5rem;
   display: none;
   flex-direction: column;
