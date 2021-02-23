@@ -360,10 +360,21 @@ p {
   .bookmark span {
     display: inline;
   }
+
   .data {
     flex-direction: row;
+    justify-content: space-around;
   }
-  
+  .data__info {
+    padding: 0 2rem;
+  }
+  .line::after {
+    width: 1px;
+    height: 55px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+  }
 
   .stand__title {
     font-size: 1.2rem;
