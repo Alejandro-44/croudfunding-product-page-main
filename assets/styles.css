@@ -360,41 +360,9 @@ p {
     display: inline;
   }
   
-  .stand > .button {
-    position: absolute;
-    right: 32px;
-    bottom: 24px;
-    height: 48px;
-    padding-right: 2rem;
-    padding-left: 2rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 0.9rem;
-  }
 
   .stand__title {
     font-size: 1.2rem;
-    margin-top: 0;
-  }
-
-  .stand__pledge {
-    position: absolute;
-    right: 32px;
-    top: 24px;
-  }
-  .data {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .data__info {
-    padding: 0 2rem;
-  }
-  .line::after {
-    width: 1px;
-    height: 55px;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
   }
 } 
 @media screen and (min-width: 768px) {
@@ -416,12 +384,6 @@ p {
   }
   .nav__item {
     margin-left: 1rem;
-  }
-
-  .stand__pledge {
-    position: absolute;
-    right: 32px;
-    top: 32px;
   }
 
 
