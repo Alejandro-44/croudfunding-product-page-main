@@ -267,6 +267,7 @@ p {
   font-weight: var(--weight-bold);
 }
 .stand__units {
+  display: block;
   font-size: 2rem;
   font-weight: var(--weight-bold);
 }
@@ -359,10 +360,29 @@ p {
   .bookmark span {
     display: inline;
   }
+  .data {
+    flex-direction: row;
+  }
   
 
   .stand__title {
     font-size: 1.2rem;
+    margin-top: 0;
+    margin: 0;
+  }
+
+  .stand-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .stand-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .stand__pledge {
+    display: inline;
   }
 } 
 @media screen and (min-width: 768px) {
@@ -385,7 +405,5 @@ p {
   .nav__item {
     margin-left: 1rem;
   }
-
-
 
 }
