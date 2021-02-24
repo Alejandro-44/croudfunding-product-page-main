@@ -1,25 +1,17 @@
 /* VARIABLES */
-/* font */
+
 :root {
+/* font */
   --font: 'Commissioner', sans-serif;
   --weight-regular: 400;
   --weight-medium: 500;
   --weight-bold: 700;
-}
+
 /* colors */
-:root {
-  --first-color: hsl(176, 50%, 47%);
-  --second-color: hsl(176, 72%, 28%);
-  --neutral-first: hsl(0, 0%, 0%);
-  --neutral-second: hsl(0, 0%, 48%);
-}
-/* margin and padding sizes */
-:root {
-  --m-1: 1rem;
-  --m-2: 1.5rem;
-  --m-3: 2rem;
-  --m-4: 2.5rem;
-  --m-5: 3rem;
+  --light-green: hsl(176, 50%, 47%);
+  --dark-green: hsl(176, 72%, 28%);
+  --black: hsl(0, 0%, 0%);
+  --gray: hsl(0, 0%, 48%);
 }
 /* LAYOUT */
 * {
@@ -37,12 +29,12 @@ a {
   text-decoration: none;
 }
 p {
-  color: var(--neutral-second);
+  color: var(--gray);
   line-height: 2;
 }
 .button {
   height: 56px;
-  background-color: var(--first-color);
+  background-color: var(--light-green);
   color: #fff;
   border: none;
   border-radius: 28px;
@@ -55,10 +47,10 @@ p {
   margin: 1rem 0;
 }
 .button:hover {
-  background-color: var(--second-color);
+  background-color: var(--dark-green);
 }
 .button.out {
-  background-color: var(--neutral-second);
+  background-color: var(--gray);
 }
 .main {
   background: #fafafa;
@@ -66,7 +58,7 @@ p {
 .section, .modal-selection, .modal-success {
   width: calc(100% - 3rem);
   max-width: 750px;
-  padding: var(--m-2);
+  padding: 1.5rem;
   background: #fff;
   border: 1px solid #d8d8d8;
   border-radius: 10px;
@@ -84,7 +76,7 @@ p {
   overflow: hidden;
 }
 .stand {
-  padding: var(--m-2);
+  padding: 1.5rem;
 }
 
 .modal-container, .modal-selection ,.modal-success {
@@ -161,13 +153,10 @@ p {
   .nav__link {
     display: block;
     padding: 1.5rem;
-    color: var(--neutral-first);
+    color: var(--black);
     font-weight: var(--weight-medium);
   }
 }
-
-
-
 
 /* HERO */
 .hero {
@@ -201,7 +190,7 @@ p {
   font-size: 1rem;
   font-family: var(--font);
   font-weight: var(--weight-bold);
-  color: var(--neutral-second);
+  color: var(--gray);
   padding-right: 0;
   padding-left: 0;
   border: none;
@@ -253,7 +242,7 @@ p {
   background-color: hsl(0, 0%, 75%);
 }
 .data__info--color {
-  color: var(--neutral-second);
+  color: var(--gray);
   font-size: 1rem;
   font-weight: var(--weight-regular);
 }
@@ -263,7 +252,7 @@ p {
   font-size: 1rem;
 }
 .stand__pledge {
-  color: var(--first-color);
+  color: var(--light-green);
   font-weight: var(--weight-bold);
 }
 .stand__units {
@@ -274,7 +263,7 @@ p {
 .stand__units span {
   font-size: 1rem;
   font-weight: var(--weight-medium);
-  color: var(--neutral-second);
+  color: var(--gray);
 }
 .stand.out::before {
   content: ' ';
@@ -329,7 +318,7 @@ p {
   display: flex;
 }
 .pledge__text {
-  color: var(--neutral-second);
+  color: var(--gray);
 }
 
 .pledge .button {
@@ -399,11 +388,11 @@ p {
 @media screen and (min-width: 768px) {
   
   .section, .modal-selection, .modal-success {
-    padding: var(--m-5);
+    padding: 3rem;
   }
 
   .stand {
-    padding: var(--m-3);
+    padding: 2rem;
   }
 
   .nav__button {
