@@ -294,7 +294,7 @@ p {
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, .2);
-  overflow: scroll;
+  overflow: auto;
 }
 /* Selection modal */
 .modal-selection.active {
@@ -353,6 +353,8 @@ p {
 .modal-success > .modal__info {
   text-align: center;
 }
+
+/* MEDIA QUERIES */
 @media screen and (min-width: 480px) {
   .bookmark span {
     display: inline;
