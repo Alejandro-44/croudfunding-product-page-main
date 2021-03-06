@@ -76,14 +76,15 @@ p {
   border-radius: 10px;
   overflow: hidden;
 }
-.modal-stand.active {
-  border-color: var(--light-green);
-  border-width: 2px;
-}
+
 .stand {
   padding: 1.5rem;
 }
 
+.modal-stand.active {
+  border-color: var(--light-green);
+  border-width: 2px;
+}
 .modal-container, .modal-selection ,.modal-success {
   display: none;
 }
@@ -311,9 +312,6 @@ p {
 .stand-container {
   padding: 1.5rem;
 }
-.stand-container.selected {
-  border-bottom: 1px solid #d8d8d8;
-}
 .pledge {
   padding: 1.5rem;
   display: none;
@@ -322,6 +320,7 @@ p {
 }
 .modal-stand.active > .pledge {
   display: flex;
+  border-top: 1px solid #d8d8d8;
 }
 .pledge__text {
   color: var(--gray);
@@ -338,8 +337,10 @@ p {
   padding: 0 1.5rem;
   border:1px solid #d8d8d8;
   border-radius: 28px;
-  margin: 1.5rem 14px 0 0;
+  margin-right: 10px;
   font-family: var(--font);
+  font-size: 1rem;
+  font-weight: var(--weight-bold);
   text-align: center;
   outline: none;
 }
@@ -390,6 +391,14 @@ p {
   }
   .stand__pledge {
     display: inline;
+  }
+  .pledge {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .pledge .button {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 } 
 @media screen and (min-width: 768px) {
