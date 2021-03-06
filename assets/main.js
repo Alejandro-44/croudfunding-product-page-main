@@ -39,11 +39,13 @@ function linkAction() {
 function modalActive() {
   modalContainer.classList.add('active')
   modalSelection.classList.add('active')
+  modalStand.forEach(n => n.classList.remove('active'));
 }
 
 function close() {
   modalContainer.classList.remove('active')
   modalSelection.classList.remove('active')
+  modalStand.forEach(n => n.classList.remove('active'));
 }
 
 function standSelected() {
@@ -53,5 +55,5 @@ function standSelected() {
 
 function next() {
   modalSelection.classList.remove('active');
-  modalSuccess.classList.add('active')
+  modalSuccess.classList.add('active');
 }
