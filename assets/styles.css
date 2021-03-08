@@ -312,6 +312,9 @@ p {
 .stand-container {
   padding: 1.5rem;
 }
+.stand-container > .stand__title {
+  margin-bottom: 1rem;
+}
 .pledge {
   padding: 1.5rem;
   display: none;
@@ -424,4 +427,9 @@ p {
     margin-left: 1rem;
   }
 
+  .stand-container > .stand__title {
+    margin-bottom: 0;
+    margin-right: 10px;
+    display: inline-block;
+  }
 }
