@@ -28,6 +28,7 @@ body {
 a {
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 p {
   color: var(--gray);
@@ -114,6 +115,7 @@ p {
   font-size: 1.5rem;
   font-weight: var(--weight-bold);
 }
+/* NAV mobile */
 @media screen and (max-width: 767px) {
   .nav__menu {
     display: none;
@@ -202,6 +204,7 @@ p {
   border: none;
   border-radius: 28px;
   margin-left: 5px;
+  outline: none;
 }
 .bookmark span {
   display: none;

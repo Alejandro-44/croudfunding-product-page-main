@@ -2,6 +2,7 @@
 const navButton = document.getElementById('nav-toggle');
 const menu = document.querySelector('.nav__menu');
 const link = document.querySelectorAll('.nav__link');
+const getStarted = document.getElementById('get-started')
 
 /* modals */
 const modalButton = document.querySelectorAll('.button');
@@ -18,6 +19,7 @@ const pledgeButton = document.querySelectorAll('.pledge .button')
 /* event listeners */
 navButton.addEventListener('click', toggle);
 link.forEach(n => n.addEventListener('click', linkAction)) 
+getStarted.addEventListener('click', modalActive)
 
 modalButton.forEach(n => n.addEventListener('click', modalActive)) 
 modalCloseButton.addEventListener('click', close)
