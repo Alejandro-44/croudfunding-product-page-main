@@ -257,7 +257,7 @@ p {
 .stand__title {
   font-size: 1rem;
 }
-.stand__pledge {
+.stand__subtitle {
   color: var(--light-green);
   font-weight: var(--weight-bold);
 }
@@ -391,7 +391,7 @@ p {
     justify-content: space-between;
     align-items: center;
   }
-  .stand__pledge {
+  .stand__subtitle {
     display: inline;
   }
   .pledge {
